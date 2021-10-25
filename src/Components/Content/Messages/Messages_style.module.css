@@ -1,0 +1,11 @@
+.app_messages {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.activeLink{
+    color: gold;
+}

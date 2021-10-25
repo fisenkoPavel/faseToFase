@@ -1,0 +1,15 @@
+.app_nav{ 
+    grid-area: nav;
+    background-color: #333333;
+    height: 100%;
+  }
+  .app_nav__list{
+    list-style: none;
+  }
+  .app_nav__link{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .activeLink{
+    color: aqua;
+  }
