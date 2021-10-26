@@ -12,7 +12,7 @@ import Video from './Video/Video';
 function Content () {
     return (
         <main className={style.app_main}>
-            <Route path='/profile' component={Profile}/>
+            <Route path='/profile' render={ () => <Profile/>}/>
             <Route path='/messages' component={Messages}/>
             <Route path='/news' component={News}/>
             <Route path='/music' component={Music}/>
