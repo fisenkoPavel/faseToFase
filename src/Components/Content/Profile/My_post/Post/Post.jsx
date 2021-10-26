@@ -1,13 +1,13 @@
 import React from "react";
 
-import style from './Post_style.module.css';
+import style from './PostStyle.module.css';
 
 function Post (props) {
     return (
         <div className={style.post}>
-            <img className={style.post_logo} src="https://i.ucrazy.ru/files/i/2012.11.11/1352571682_2012-11-11_171_00122.jpg" alt="wallpaper" alt="" />
+            <img className={style.post_logo} src="https://www.ejin.ru/wp-content/uploads/2018/10/crew4_1024.png" alt="wallpaper" alt="" />
             <p className={style.post_title}>{props.message}</p>
-            <div>
+            <div className={style.like}>
                 <span>Like{props.like}</span><br/>
                 <span>Dislike</span>
             </div>
@@ -15,4 +15,4 @@ function Post (props) {
     )
 }
 
-export default Post; 
+export default Post;

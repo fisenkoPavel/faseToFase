@@ -1,19 +1,27 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import style from './Header_style.module.css';
+import style from './HeaderStyle.module.css';
 
-function Header () {
+const Header = () => {
   return (
     <header className={style.app_header}>
       <div className={style.logo}>
-        <img className={style.app_logo} src='https://banner2.cleanpng.com/20180424/fre/kisspng-helping-hand-ngo-child-business-earth-and-countdown-5-days-5aded5457030a1.1628014015245530294595.jpg' alt="logo" />
+        FASEtoFASE
       </div>
-      <div className={style.header_title}>
-        <h1 className={style.title_h1}>Face to fase</h1>
+      <div className={style.header_nav}>
+        <ul className={style.nav_items}>
+          <li className={style.item}>Поиск</li>
+          <li className={style.item}>Главная</li>
+          <li className={style.item}>Оповещения</li>
+          <li className={style.item}>Сообщения</li>
+        </ul>
       </div>
       <div className={style.header_btn}>
         <NavLink to="#">Выйти</NavLink>
+      </div>
+      <div className={style.photo_mini}>
+        <img className={style.photo} src="https://www.ejin.ru/wp-content/uploads/2018/10/crew4_1024.png" alt="user_photo_mini" />
       </div>
     </header>
   );

@@ -1,0 +1,12 @@
+.app_my_post{
+    margin-top: 25px;
+    text-align: center;
+
+}
+.app_my_post h2{
+    color: #eeeeee;
+    border-bottom: 2px solid #088dcd;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 25px;
+}

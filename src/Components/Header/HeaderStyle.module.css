@@ -1,0 +1,42 @@
+.app_header{
+    grid-area: header;
+    background-color: #343434;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    color: #eeeeee;
+    position: fixed;
+    min-width: 1024px;
+    z-index: 2;
+  }
+  .logo{
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .header_nav{
+    margin-top: 10px;
+  }
+  .nav_items{
+    display: flex;
+    list-style: none;
+  }
+  .item{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .header_btn a{
+    text-decoration: none;
+    color: #eeeeee;
+    margin-top: 25px;
+    display: block;
+  }
+  .photo_mini{
+    margin-top: 8px;
+    margin-right: 25px;
+  }
+  .photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #eeeeee;
+  }

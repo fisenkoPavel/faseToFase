@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-import style from './Content_style.module.css';
+import style from './ContentStyle.module.css';
 
 import Profile from './Profile/Profile';
 import Messages from './Messages/Mesages';

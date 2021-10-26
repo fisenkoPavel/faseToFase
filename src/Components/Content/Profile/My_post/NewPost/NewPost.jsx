@@ -1,8 +1,8 @@
 import React from 'react';
 
-import style from './NewPost_style.module.css';
+import style from './NewPostStyle.module.css';
 
-function NewPost () {
+const NewPost = () => {
     return (
         <div className={style.new_post}>
             <form action="">
