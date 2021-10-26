@@ -5,11 +5,12 @@ import style from './Profile_style.module.css';
 import User_profile from './User_profile/User_profile';
 import MyPost from './My_post/MyPost';
 
-function Profile () {
+const Profile = (props) => {
+    
     return (
         <section className={style.profile_app}>
             <User_profile/>
-            <MyPost/>
+            <MyPost posts={props.posts}/>
         </section>
     )
 }

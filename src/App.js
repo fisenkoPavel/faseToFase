@@ -7,13 +7,14 @@ import Navbar from './Components/Navbar/Navbar';
 import Content from './Components/Content/Content';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-function App() {
+const App = (props) => {
+
   return (
     <BrowserRouter>
     <div className="app_container">
       <Header/>
       <Navbar/>
-      <Content/>
+      <Content posts={props.posts}/>
     </div>
     </BrowserRouter>
   );

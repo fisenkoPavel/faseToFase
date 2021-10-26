@@ -9,10 +9,11 @@ import News from './News/News';
 import Music from './Music/Music';
 import Video from './Video/Video';
 
-function Content () {
+const Content = (props) => {
+
     return (
         <main className={style.app_main}>
-            <Route path='/profile' render={ () => <Profile/>}/>
+            <Route path='/profile' render={ () => <Profile posts={props.posts}/>}/>
             <Route path='/messages' component={Messages}/>
             <Route path='/news' component={News}/>
             <Route path='/music' component={Music}/>
