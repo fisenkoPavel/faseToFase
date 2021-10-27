@@ -1,5 +1,4 @@
 import React from 'react';
-
 import style from './MessagesStyle.module.css';
 import { NavLink } from 'react-router-dom';
 
