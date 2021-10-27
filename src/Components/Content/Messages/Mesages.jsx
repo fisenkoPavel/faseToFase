@@ -1,6 +1,6 @@
 import React from 'react';
 
-import style from './Messages_style.module.css';
+import style from './MessagesStyle.module.css';
 import { NavLink } from 'react-router-dom';
 
 
@@ -22,7 +22,7 @@ const Message = (props) => {
 
 const Messages = (props) => {
 
-    let dialogs = [
+/*    let dialogs = [
         {id: 1, name: 'Павел'},
         {id: 2, name: 'Дмитрий'},
         {id: 3, name: 'Алексей'},
@@ -34,10 +34,10 @@ const Messages = (props) => {
         {id: 2, message: 'Как дела??'},
         {id: 3, message: 'Чем занимаешься??'},
         {id: 4, message: '))))'}
-    ]
+    ]*/
 
-    let dialogsElements = dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);
-    let messagesElements = messages.map (m => <Message message={m.message}/>);
+    let dialogsElements = props.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);
+    let messagesElements = props.messages.map (m => <Message message={m.message}/>);
 
     return (
         <section className={style.app_messages}>

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import style from './Video.module.css';
+import style from './VideoStyle.module.css';
 
 const Video = () => {
     return (
-        <div>
-            Видео
+        <div className={style.app_video}>
+            <p>Здесь будут отображаться ваши видео</p>
         </div>
     )
 }

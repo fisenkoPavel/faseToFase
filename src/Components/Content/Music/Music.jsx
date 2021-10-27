@@ -1,11 +1,11 @@
 import React from 'react';
 
-import style from './Music.module.css';
+import style from './MusicStyle.module.css';
 
 const Music = () => {
     return (
-        <div>
-            Музыка
+        <div className={style.app_music}>
+           <p>Здесь будет отображаться ваша музыка</p>
         </div>
     )
 }

@@ -12,8 +12,8 @@ const Navbar = () => {
                 <li className={style.app_nav__item}><NavLink className={style.app_nav__link} activeClassName={style.activeLink} to="/news">Новости</NavLink></li>
                 <li className={style.app_nav__item}><NavLink className={style.app_nav__link} activeClassName={style.activeLink} to="/music">Музыка</NavLink></li>
                 <li className={style.app_nav__item}><NavLink className={style.app_nav__link} activeClassName={style.activeLink} to="/video">Видео</NavLink></li>
-                <li className={style.app_nav__item}><a className={style.app_nav__link} href="#">Группы</a></li>
-                <li className={style.app_nav__item}><a className={style.app_nav__link} href="#">Настройки</a></li>
+                <li className={style.app_nav__item}><NavLink className={style.app_nav__link} activeClassName={style.activeLink} to="/friends">Друзья</NavLink></li>
+                <li className={style.app_nav__item}><NavLink className={style.app_nav__link} activeClassName={style.activeLink} to="/settings">Настройки</NavLink></li>
             </ul>
         </nav>
     );

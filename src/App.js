@@ -14,7 +14,7 @@ const App = (props) => {
     <div className="app_container">
       <Header/>
       <Navbar/>
-      <Content posts={props.posts}/>
+      <Content posts={props.posts} dialogs={props.dialogs} messages={props.messages}/>
     </div>
     </BrowserRouter>
   );
