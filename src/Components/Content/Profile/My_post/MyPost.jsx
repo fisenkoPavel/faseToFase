@@ -7,14 +7,6 @@ import Post from './Post/Post';
 
 const MyPost = (props) => {
 
-    /*let posts = [
-        {id:1, message: 'Мой первый пост', like: 14},
-        {id:2, message: 'Мой второй пост', like: 1},
-        {id:3, message: 'Мой третий пост', like: 4},
-        {id:4, message: 'Мой четвертый пост', like: 105},
-        {id:5, message: 'Мой пятый пост', like: 21}
-    ]*/
-
     let postsElements = props.posts.map(p => <Post message={p.message} like={p.like}/>);
 
     return (

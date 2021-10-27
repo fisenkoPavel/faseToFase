@@ -15,8 +15,8 @@ const Content = (props) => {
 
     return (
         <main className={style.app_main}>
-            <Route path='/profile' render={ () => <Profile posts={props.posts}/>}/>
-            <Route path='/messages' render={ () => <Messages dialogs={props.dialogs} messages={props.messages}/>}/>
+            <Route path='/profile' render={ () => <Profile posts={props.state.profilePage.posts}/>}/>
+            <Route path='/messages' render={ () => <Messages dialogs={props.state.messagesPage.dialogs} messages={props.state.messagesPage.messages}/>}/>
             <Route path='/news' render={ () => <News/>}/>
             <Route path='/music' render={ () => <Music/>}/>
             <Route path='/video' render={ () => <Video/>}/>
