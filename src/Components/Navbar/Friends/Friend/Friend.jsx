@@ -1,11 +1,11 @@
 import React from "react";
 import style from './FriendStyle.module.css';
 
-const Friend = () => {
+const Friend = (props) => {
     return(
         <div className={style.friend}>
             <div className={style.avatar}></div>
-            <span>Друг</span>
+            <span>{props.name}</span>
         </div>
     )
 }

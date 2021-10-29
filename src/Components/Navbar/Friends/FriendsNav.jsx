@@ -2,15 +2,15 @@ import React from "react";
 import style from './FriendsNavStyle.module.css';
 import Friend from './Friend/Friend';
 
-const Friends = () => {
+const Friends = (props) => {
+
+    let friendsElements = props.friends.map(p => <Friend name={p.name}/>);
 
     return (
         <div>
             <h3>Мои друзья</h3>
             <div className={style.friends_list}>
-                <Friend/>
-                <Friend/>
-                <Friend/>
+                {friendsElements}
             </div>
         </div>
     )

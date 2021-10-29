@@ -3,8 +3,9 @@ import React from 'react';
 import style from './NavbarStyle.module.css';
 import { NavLink } from 'react-router-dom';
 import Friends from './Friends/FriendsNav'
+import state from '../../redux/state';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <nav className={style.app_nav}>
             <ul className={style.app_nav_list}>
@@ -17,7 +18,7 @@ const Navbar = () => {
                 <li className={style.app_nav__item}><NavLink className={style.app_nav__link} activeClassName={style.activeLink} to="/settings">Настройки</NavLink></li>
             </ul>
             <div className={style.friends_nav}>
-                <Friends/>
+                <Friends friends={props.state.friendsNavbar.friends}/>
             </div>
         </nav>
     );

@@ -24,6 +24,13 @@ let state = {
             {id: 3, name: 'Алексей'},
             {id: 4, name: 'Роман'}
         ]
+    },
+    friendsNavbar: {
+        friends: [
+            {id: 1, name: 'Павел'},
+            {id: 2, name: 'Дмиртий'},
+            {id: 3, name: 'Роман'}
+        ]
     }
 }
 
