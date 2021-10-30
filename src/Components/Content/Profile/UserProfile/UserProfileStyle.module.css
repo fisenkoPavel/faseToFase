@@ -4,10 +4,17 @@
   border-radius: 5px;
   position: relative;
 }
+.content_wallpaper{
+  width: 100%;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+  background-color: #088dcd;
+}
 .wallpaper{
     width: 100%;
     height: 250px;
     border-radius: 5px 5px 0 0;
+    background-color: #088dcd;
   }
   .user_profile{
     display: flex;

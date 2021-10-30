@@ -6,7 +6,7 @@ const UserProfile = () => {
     return (
         <section className={style.app_content}>
             <div className={style.content_wallpaper}>
-                <img className={style.wallpaper} src="https://get.wallhere.com/photo/cherry-blossom-Japan-light-pink-sakura-water-1839719.jpg" alt="wallpaper"/>
+                <img className={style.wallpaper} src="https://yandex.ru/images/search?pos=29&from=tabbar&img_url=https%3A%2F%2Fhddesktopwallpapers.in%2Fwp-content%2Fuploads%2F2015%2F09%2Fstone-wallpaper-free.jpg&text=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8+%D0%BD%D0%B0+%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9+%D1%81%D1%82%D0%BE%D0%BB&rpt=simage" alt="wallpaper"/>
             </div>
             <div className={style.user_photo}>
                 <img className={style.photo} src="https://www.ejin.ru/wp-content/uploads/2018/10/crew4_1024.png" alt="user_photo" />

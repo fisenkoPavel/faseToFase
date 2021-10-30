@@ -1,3 +1,6 @@
+.friends{
+    text-align: center;
+}
 .friends_list{
     display: flex;
 }

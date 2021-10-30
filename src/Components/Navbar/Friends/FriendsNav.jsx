@@ -7,7 +7,7 @@ const Friends = (props) => {
     let friendsElements = props.friends.map(p => <Friend name={p.name}/>);
 
     return (
-        <div>
+        <div className={style.friends}>
             <h3>Мои друзья</h3>
             <div className={style.friends_list}>
                 {friendsElements}
