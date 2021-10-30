@@ -9,7 +9,8 @@ let state = {
             {id:3, message: 'Мой третий пост', like: 4},
             {id:4, message: 'Мой четвертый пост', like: 105},
             {id:5, message: 'Мой пятый пост', like: 21}
-        ]
+        ],
+        newPostText: 'Введите сообщение'
     },
 
     messagesPage: {
@@ -44,6 +45,12 @@ export let addPost = (postMessage) => {
         like: 0
     };
     state.profilePage.posts.push(newPost);
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) => {
+
+    state.profilePage.newPostText = newText;
     rerenderEntireTree(state);
 }
 

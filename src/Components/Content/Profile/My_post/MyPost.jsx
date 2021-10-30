@@ -10,7 +10,7 @@ const MyPost = (props) => {
     return (
         <section className={style.app_my_post}>
             <h2>Моя стена</h2>
-            <NewPost addPost={props.addPost}/>
+            <NewPost addPost={props.addPost} newPostText={props.newPostText} updateNewPostText={props.updateNewPostText}/>
         {postsElements}
         </section>
     )

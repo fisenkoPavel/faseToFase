@@ -10,7 +10,7 @@ const Profile = (props) => {
     return (
         <section className={style.profile_app}>
             <UserProfile/>
-            <MyPost posts={props.posts} addPost={props.addPost}/>
+            <MyPost posts={props.posts} newPostText={props.newPostText} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>
         </section>
     )
 }
